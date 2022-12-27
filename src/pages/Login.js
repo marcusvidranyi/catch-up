@@ -1,6 +1,6 @@
 
 import "../style.scss";
-export const Login = () => {
+const Login = () => {
     return (
         <div className="form_container">
             <div className="form_wrapper">
@@ -16,4 +16,5 @@ export const Login = () => {
         </div>
     )
 };
+export default Login;
 
