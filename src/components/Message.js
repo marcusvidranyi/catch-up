@@ -12,6 +12,9 @@ const Message = ({ message }) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }, [message]);
 
+  
+  
+  
   return (
     <div
       ref={ref}
@@ -26,7 +29,7 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-        <span>just now</span>
+        <span>{message.date.toDate().toLocaleTimeString()}</span>
       </div>
       <div className="message_content">
         <p>{message.text}</p>
